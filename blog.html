@@ -7,63 +7,112 @@
     <title>Assignment 5</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .Lexend {
+            font-family: "Lexend", sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="Lexend">
 
-    <section class="w-[576px] md:w-[1440px] mx-auto sticky top-0 z-40">
-        <div class="grid grid-cols-3 py-4 bg-[#faf6e7dc]">
-            <div class=" md:pl-[30%] pl-7">
-                <a id="home-btn" class="btn bg-[#B4F461] text-xl px-8" href="">Home</a>
+    <header>
+        <section class="w-[576px] md:w-[1440px] mx-auto sticky top-0 z-40">
+            <div class="grid grid-cols-3 py-4 bg-[#faf6e7dc]">
+                <div class=" md:pl-[30%] pl-7">
+                    <a id="home-btn" class="btn bg-[#B4F461] text-xl px-8" href="">Home</a>
+                </div>
+                <div class="flex items-center justify-center">
+                    <img src="./assets/logo.png" alt="">
+                    <h2 class="ml-2 font-bold text-2xl hidden md:block">Donate Bangladesh</h2>
+                </div>
+                <div class="flex items-center justify-end md:pr-[30%] pr-7">
+                    <img src="./assets/coin.png" alt="">
+                    <h2 class="ml-1 font-semibold"><span id="my-wallet">15500</span> BDT</h2>
+                </div>
             </div>
-            <div class="flex items-center justify-center">
-                <img src="./assets/logo.png" alt="">
-                <h2 class="ml-2 font-bold text-2xl hidden md:block">Donate Bangladesh</h2>
-            </div>
-            <div class="flex items-center justify-end md:pr-[30%] pr-7">
-                <img src="./assets/coin.png" alt="">
-                <h2 class="ml-1 font-semibold"><span id="my-wallet">15500</span> BDT</h2>
-            </div>
-        </div>
-    </section>
+        </section>
+    </header>
 
-    <section class="w-[576px] md:w-[1440px] mx-auto my-10">
-        <div class="mt-10 w-4/5 mx-auto border rounded-lg border-[#1111111a] p-7">
-            <h2 class="font-bold mb-6 text-3xl">Important FAQ</h2>
-            <div class="join join-vertical w-full">
-                <div class="collapse collapse-arrow join-item border-base-300 border">
-                    <input type="radio" name="my-accordion-4" checked="checked" />
-                    <div class="collapse-title text-xl font-medium">What is Document Object Model (DOM)?</div>
-                    <div class="collapse-content">
-                        <p>Certainly! The DOM stands for Document Object Model. It’s like the backstage pass that JavaScript gets to the web page—it’s the interface between JavaScript and your friendly neighborhood web browser.</p>
+    <main>
+        <section class="w-[576px] md:w-[1440px] mx-auto my-10">
+            <div class="mt-10 w-4/5 mx-auto border rounded-lg border-[#1111111a] p-7">
+                <h2 class="font-bold mb-6 text-3xl">Important FAQ</h2>
+                <div class="join join-vertical w-full">
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                        <input type="radio" name="my-accordion-4" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">What is Document Object Model (DOM)?</div>
+                        <div class="collapse-content">
+                            <p>Certainly! The DOM stands for Document Object Model. It’s like the backstage pass that
+                                JavaScript gets to the web page—it’s the interface between JavaScript and your friendly
+                                neighborhood web browser.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="collapse collapse-arrow join-item border-base-300 border">
-                    <input type="radio" name="my-accordion-4" />
-                    <div class="collapse-title text-xl font-medium">How do you select an Element from the DOM?</div>
-                    <div class="collapse-content">
-                        <p>To select an element from the DOM in JavaScript, you can use methods provided by the document object, such as getElementById(), getElementsByClassName(), getElementsByTagName(), querySelector(), and querySelectorAll(). The most commonly used method is document.getElementById(), which selects an element by its unique ID attribute. For more complex selections, querySelector() allows you to select the first element that matches a specified CSS selector, and querySelectorAll() retrieves all elements that match the selector. For example, to select an element with the ID "header", you would use document.getElementById("header"), or to select the first element with the class "menu", you could use document.querySelector(".menu"). These methods enable interaction with the element, such as modifying its content or styling.</p>
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">How do you select an Element from the DOM?</div>
+                        <div class="collapse-content">
+                            <p>To select an element from the DOM in JavaScript, you can use methods provided by the
+                                document
+                                object, such as getElementById(), getElementsByClassName(), getElementsByTagName(),
+                                querySelector(), and querySelectorAll(). The most commonly used method is
+                                document.getElementById(), which selects an element by its unique ID attribute. For more
+                                complex selections, querySelector() allows you to select the first element that matches
+                                a
+                                specified CSS selector, and querySelectorAll() retrieves all elements that match the
+                                selector. For example, to select an element with the ID "header", you would use
+                                document.getElementById("header"), or to select the first element with the class "menu",
+                                you
+                                could use document.querySelector(".menu"). These methods enable interaction with the
+                                element, such as modifying its content or styling.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="collapse collapse-arrow join-item border-base-300 border">
-                    <input type="radio" name="my-accordion-4" />
-                    <div class="collapse-title text-xl font-medium">What is event delegation in the context of DOM, and why it is useful?</div>
-                    <div class="collapse-content">
-                        <p>Event delegation is a technique in the DOM where a single event listener is attached to a parent element to handle events for all of its child elements, rather than adding separate event listeners to each child. This works because events in JavaScript bubble up from the child element that triggered the event to its parent, allowing the parent to capture and respond to the event. Event delegation is useful for improving performance and simplifying code, especially when dealing with dynamically added elements or large numbers of child elements, as it reduces the need for multiple listeners.</p>
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">What is event delegation in the context of DOM,
+                            and
+                            why it is useful?</div>
+                        <div class="collapse-content">
+                            <p>Event delegation is a technique in the DOM where a single event listener is attached to a
+                                parent element to handle events for all of its child elements, rather than adding
+                                separate
+                                event listeners to each child. This works because events in JavaScript bubble up from
+                                the
+                                child element that triggered the event to its parent, allowing the parent to capture and
+                                respond to the event. Event delegation is useful for improving performance and
+                                simplifying
+                                code, especially when dealing with dynamically added elements or large numbers of child
+                                elements, as it reduces the need for multiple listeners.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="collapse collapse-arrow join-item border-base-300 border">
-                    <input type="radio" name="my-accordion-4" />
-                    <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
-                    <div class="collapse-content">
-                        <p>To manipulate an element's attributes and styles in the DOM, you can use JavaScript methods like setAttribute() and getAttribute() for attributes, and access the style property for inline styles. For attributes, you can change or retrieve them like this: element.setAttribute('src', 'image.jpg') or element.getAttribute('href'). For styles, you can modify them by directly setting properties on the style object, e.g., element.style.color = 'red' or element.style.backgroundColor = 'blue'. This allows dynamic changes to an element's appearance or behavior.</p>
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes
+                            and
+                            styles using the DOM?</div>
+                        <div class="collapse-content">
+                            <p>To manipulate an element's attributes and styles in the DOM, you can use JavaScript
+                                methods
+                                like setAttribute() and getAttribute() for attributes, and access the style property for
+                                inline styles. For attributes, you can change or retrieve them like this:
+                                element.setAttribute('src', 'image.jpg') or element.getAttribute('href'). For styles,
+                                you
+                                can modify them by directly setting properties on the style object, e.g.,
+                                element.style.color = 'red' or element.style.backgroundColor = 'blue'. This allows
+                                dynamic
+                                changes to an element's appearance or behavior.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <script src="./js/blog.js"></script>
+
 </body>
 
 </html>

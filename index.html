@@ -22,31 +22,33 @@
 <body class="Lexend">
 
     <!-- Header section (Start) -->
-    <section class="w-[576px] md:w-[1440px] mx-auto sticky top-0 z-40">
-        <div class="grid grid-cols-3 py-4 bg-[#faf6e7dc]">
-            <div class=" md:pl-[30%] pl-7">
-                <a id="blog-btn" class="btn bg-[#B4F461] text-xl px-8" href="">Blog</a>
+    <header>
+        <section class="w-[576px] md:w-[1440px] mx-auto sticky top-0 z-40">
+            <div class="grid grid-cols-3 py-4 bg-[#faf6e7dc]">
+                <div class=" md:pl-[30%] pl-7">
+                    <a id="blog-btn" class="btn bg-[#B4F461] text-xl px-8" href="">Blog</a>
+                </div>
+                <div class="flex items-center justify-center">
+                    <img src="./assets/logo.png" alt="">
+                    <h2 class="ml-2 font-bold text-2xl hidden md:block">Donate Bangladesh</h2>
+                </div>
+                <div class="flex items-center justify-end md:pr-[30%] pr-7">
+                    <img src="./assets/coin.png" alt="">
+                    <h2 class="ml-1 font-semibold"><span id="my-wallet">15500</span> BDT</h2>
+                </div>
             </div>
-            <div class="flex items-center justify-center">
-                <img src="./assets/logo.png" alt="">
-                <h2 class="ml-2 font-bold text-2xl hidden md:block">Donate Bangladesh</h2>
+            <div class="flex gap-2 justify-center pt-5 pb-3 shadow bg-[#ffffffc4]">
+                <a id="donation-btn" class="btn bg-[#B4F461] text-xl " href="">Donation</a>
+                <a id="history-btn" class="btn text-xl " href="">History</a>
             </div>
-            <div class="flex items-center justify-end md:pr-[30%] pr-7">
-                <img src="./assets/coin.png" alt="">
-                <h2 class="ml-1 font-semibold"><span id="my-wallet">15500</span> BDT</h2>
-            </div>
-        </div>
-        <div class="flex gap-2 justify-center pt-5 pb-3 shadow bg-[#ffffffc4]">
-            <a id="donation-btn" class="btn bg-[#B4F461] text-xl " href="">Donation</a>
-            <a id="history-btn" class="btn text-xl " href="">History</a>
-        </div>
-    </section>
+        </section>
+    </header>
     <!-- Header section (End) -->
 
 
 
     <!-- Main Section (Start) -->
-    <div id="main-section" class="z-20">
+    <main id="main-section" class="z-20">
         <section class="w-[576px] md:w-[1440px] mx-auto my-10">
             <div class="card md:card-side mt-10 w-4/5 mx-auto border border-[#1111111a] p-7">
                 <figure class="md:w-1/2">
@@ -117,7 +119,7 @@
                 </div>
             </div>
         </section>
-    </div>
+    </main>
 
 
     <!-- History Section -->

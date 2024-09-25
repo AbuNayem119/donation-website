@@ -1,5 +1,5 @@
 
-// Blog Button
+// Blog Button works
 
 document.getElementById("blog-btn").addEventListener("click", function (event) {
     event.preventDefault();
@@ -35,50 +35,6 @@ document.getElementById("history-btn").addEventListener("click", function (event
 
 
 
-// Modal Ready
-document.getElementById('noakhali-input').addEventListener('keyup', function (event) {
-    
-    event.preventDefault();
-    let noakhaliInputMoney = document.getElementById("noakhali-input").value;
-    let myWallet = parseInt(document.getElementById("my-wallet").innerText);
-
-    if (noakhaliInputMoney == "" || noakhaliInputMoney == null || noakhaliInputMoney == undefined || noakhaliInputMoney == 0 || isNaN(noakhaliInputMoney) || noakhaliInputMoney < 0 || noakhaliInputMoney > myWallet) {
-        document.getElementById('noakhali-donate-input').removeAttribute('onclick');
-    } else {
-        document.getElementById('noakhali-donate-input').setAttribute('onclick', 'my_modal_1.showModal()');
-    }
-    
-
-});
-
-document.getElementById('feni-input').addEventListener('keyup', function (event) {
-
-    event.preventDefault();
-    let feniInputMoney = document.getElementById("feni-input").value;
-    let myWallet = parseInt(document.getElementById("my-wallet").innerText);
-
-    if (feniInputMoney == "" || feniInputMoney == null || feniInputMoney == undefined || feniInputMoney == 0 || isNaN(feniInputMoney) || feniInputMoney < 0 || feniInputMoney > myWallet) {
-        document.getElementById('feni-donate-input').removeAttribute('onclick');
-    } else {
-        document.getElementById('feni-donate-input').setAttribute('onclick', 'my_modal_1.showModal()');
-    }
-
-});
-
-
-document.getElementById('quota-input').addEventListener('keyup', function (event) {
-
-    event.preventDefault();
-    let quotaInputMoney = document.getElementById("quota-input").value;
-    let myWallet = parseInt(document.getElementById("my-wallet").innerText);
-
-    if (quotaInputMoney == "" || quotaInputMoney == null || quotaInputMoney == undefined || quotaInputMoney == 0 || isNaN(quotaInputMoney) || quotaInputMoney < 0 || quotaInputMoney > myWallet) {
-        document.getElementById('quota-donate-input').removeAttribute('onclick');
-    } else {
-        document.getElementById('quota-donate-input').setAttribute('onclick', 'my_modal_1.showModal()');
-    }
-
-});
 
 
 
@@ -239,6 +195,54 @@ document.getElementById("quota-donate-input").addEventListener("click", function
         
         historySection.appendChild(section);
         
+    }
+
+});
+
+
+
+
+// Modal Ready Code is here
+document.getElementById('noakhali-input').addEventListener('keyup', function (event) {
+    
+    event.preventDefault();
+    let noakhaliInputMoney = document.getElementById("noakhali-input").value;
+    let myWallet = parseInt(document.getElementById("my-wallet").innerText);
+
+    if (noakhaliInputMoney == "" || noakhaliInputMoney == null || noakhaliInputMoney == undefined || noakhaliInputMoney == 0 || isNaN(noakhaliInputMoney) || noakhaliInputMoney < 0 || noakhaliInputMoney > myWallet) {
+        document.getElementById('noakhali-donate-input').removeAttribute('onclick');
+    } else {
+        document.getElementById('noakhali-donate-input').setAttribute('onclick', 'my_modal_1.showModal()');
+    }
+    
+
+});
+
+document.getElementById('feni-input').addEventListener('keyup', function (event) {
+
+    event.preventDefault();
+    let feniInputMoney = document.getElementById("feni-input").value;
+    let myWallet = parseInt(document.getElementById("my-wallet").innerText);
+
+    if (feniInputMoney == "" || feniInputMoney == null || feniInputMoney == undefined || feniInputMoney == 0 || isNaN(feniInputMoney) || feniInputMoney < 0 || feniInputMoney > myWallet) {
+        document.getElementById('feni-donate-input').removeAttribute('onclick');
+    } else {
+        document.getElementById('feni-donate-input').setAttribute('onclick', 'my_modal_1.showModal()');
+    }
+
+});
+
+
+document.getElementById('quota-input').addEventListener('keyup', function (event) {
+
+    event.preventDefault();
+    let quotaInputMoney = document.getElementById("quota-input").value;
+    let myWallet = parseInt(document.getElementById("my-wallet").innerText);
+
+    if (quotaInputMoney == "" || quotaInputMoney == null || quotaInputMoney == undefined || quotaInputMoney == 0 || isNaN(quotaInputMoney) || quotaInputMoney < 0 || quotaInputMoney > myWallet) {
+        document.getElementById('quota-donate-input').removeAttribute('onclick');
+    } else {
+        document.getElementById('quota-donate-input').setAttribute('onclick', 'my_modal_1.showModal()');
     }
 
 });
