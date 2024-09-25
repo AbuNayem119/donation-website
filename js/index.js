@@ -109,7 +109,7 @@ document.getElementById("noakhali-donate-input").addEventListener("click", funct
         
 
         let section = document.createElement('section');
-        section.className = 'w-[1440px] mx-auto my-5';
+        section.className = 'w-[576px] md:w-[1440px] mx-auto my-5';
         
         let innerDiv = document.createElement('div');
         innerDiv.className = 'w-4/5 mx-auto border rounded-lg border-[#1111111a] p-7';
@@ -122,7 +122,7 @@ document.getElementById("noakhali-donate-input").addEventListener("click", funct
         let paragraph = document.createElement('p');
         paragraph.className = 'p-2 bg-[#f1efef] rounded';
         let date = new Date();
-        paragraph.textContent = `Date : ${date.toLocaleString()}`;
+        paragraph.textContent = `Date : ${date}`;
         
         innerDiv.appendChild(heading);
         innerDiv.appendChild(paragraph);
@@ -165,7 +165,7 @@ document.getElementById("feni-donate-input").addEventListener("click", function 
         let historySection = document.getElementById('history-section');
 
         let section = document.createElement('section');
-        section.className = 'w-[1440px] mx-auto my-5';        
+        section.className = 'w-[576px] md:w-[1440px] mx-auto my-5';        
         
         let innerDiv = document.createElement('div');
         innerDiv.className = 'w-4/5 mx-auto border rounded-lg border-[#1111111a] p-7';        
@@ -178,7 +178,7 @@ document.getElementById("feni-donate-input").addEventListener("click", function 
         let paragraph = document.createElement('p');
         paragraph.className = 'p-2 bg-[#f1efef] rounded';
         let date = new Date();
-        paragraph.textContent = `Date : ${date.toLocaleString()}`;        
+        paragraph.textContent = `Date : ${date}`;        
         
         innerDiv.appendChild(heading);
         innerDiv.appendChild(paragraph);
@@ -217,7 +217,7 @@ document.getElementById("quota-donate-input").addEventListener("click", function
         let historySection = document.getElementById('history-section');
 
         let section = document.createElement('section');
-        section.className = 'w-[1440px] mx-auto my-5';
+        section.className = 'w-[576px] md:w-[1440px] mx-auto my-5';
         
         let innerDiv = document.createElement('div');
         innerDiv.className = 'w-4/5 mx-auto border rounded-lg border-[#1111111a] p-7';
@@ -230,7 +230,7 @@ document.getElementById("quota-donate-input").addEventListener("click", function
         let paragraph = document.createElement('p');
         paragraph.className = 'p-2 bg-[#f1efef] rounded';
         let date = new Date();
-        paragraph.textContent = `Date : ${date.toLocaleString()}`;
+        paragraph.textContent = `Date : ${date}`;
         
         innerDiv.appendChild(heading);
         innerDiv.appendChild(paragraph);
