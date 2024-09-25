@@ -1,5 +1,5 @@
 
-// Blog Button works
+// Blog Button works is here
 
 document.getElementById("blog-btn").addEventListener("click", function (event) {
     event.preventDefault();
@@ -9,7 +9,7 @@ document.getElementById("blog-btn").addEventListener("click", function (event) {
 
 
 
-// Donation Button and History Button
+// Donation Button and History Button is here
 
 document.getElementById("donation-btn").addEventListener("click", function (event) {
     event.preventDefault();
@@ -39,7 +39,7 @@ document.getElementById("history-btn").addEventListener("click", function (event
 
 
 
-// Noakhali Donate
+// Noakhali Donate is here
 document.getElementById("noakhali-donate-input").addEventListener("click", function (event) {
     event.preventDefault();
     let noakhaliInput = document.getElementById("noakhali-input").value;
@@ -59,7 +59,6 @@ document.getElementById("noakhali-donate-input").addEventListener("click", funct
         document.getElementById("noakhali-input").value = "";
 
 
-        // -------------------------------------------------------------------------------------
         // Create Section for History
         let historySection = document.getElementById('history-section');
         
@@ -97,7 +96,7 @@ document.getElementById("noakhali-donate-input").addEventListener("click", funct
 
 
 
-// Feni Donate
+// Feni Donate is here
 document.getElementById("feni-donate-input").addEventListener("click", function (event) {
     event.preventDefault();
     let feniInput = document.getElementById("feni-input").value;
@@ -115,8 +114,6 @@ document.getElementById("feni-donate-input").addEventListener("click", function 
         document.getElementById("feni-input").value = "";
 
 
-
-        // -------------------------------------------------------------------------------------
         // Create Section for History
         let historySection = document.getElementById('history-section');
 
@@ -149,7 +146,7 @@ document.getElementById("feni-donate-input").addEventListener("click", function 
 });
 
 
-// Quota Donate
+// Quota Donate is here
 document.getElementById("quota-donate-input").addEventListener("click", function (event) {
     event.preventDefault();
     let quotaInput = document.getElementById("quota-input").value;
@@ -167,8 +164,6 @@ document.getElementById("quota-donate-input").addEventListener("click", function
         document.getElementById("quota-input").value = "";     
 
 
-
-        // -------------------------------------------------------------------------------------
         // Create Section for History
         let historySection = document.getElementById('history-section');
 
